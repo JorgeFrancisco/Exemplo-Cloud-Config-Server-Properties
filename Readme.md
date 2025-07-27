@@ -17,7 +17,7 @@ O Spring Cloud Config fornece um servidor central de configuração, geralmente 
 
 🚀 Vamos pra prática?
 
-📁 Crie um repo (Azure, Gitlab, GitHub, etc) só para os arquivos properties (ou yml) das aplicações com a seguinte estrutura de pastas:
+📁 Crie um repo (Azure, Gitlab, GitHub, etc) só para os arquivos properties (ou yml) das aplicações com a seguinte estrutura de pastas (SE ESTÁ LENDO ESTE README NO GIT, JÁ ESTÀ NO REPO DOS PROPERTIES):
 
 ├── properties/
 │   └── NOME_DA_APLICACAO
