@@ -42,6 +42,16 @@ Para este exemplo ficará assim:
 │         └── staging
 │         └── production
 
+🔑 Para criptografar dados sensíveis sem precisar enviar arquivo nenhum, guarde também a chave pública (.pem) da aplicação na pasta de cada ambiente, com o nome gerado pelo Config Server (NOME_DA_APLICACAO-client-key-PROFILE.pem):
+
+├── properties/
+│   └── cloudconfigpropclient
+│         └── development
+│               └── application.properties
+│               └── cloudconfigpropclient-client-key-development.pem
+
+Assim, basta informar a aplicação e o ambiente no endpoint /certificate/encrypt do Config Server. A chave pública não é segredo e pode ficar no Git. O Config Server só carrega como properties os arquivos application*.properties (ou yml), então o .pem não aparece na configuração da aplicação.
+
 ⚙️ Execute o exemplo (projeto Exemplo-Cloud-Config-Server) do Cloud Config Server localmente, e faça o teste no browser (ou Postman):
 
 http://localhost:8888/cloudconfigpropserver/config/cloudconfigpropclient/development
