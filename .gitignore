@@ -1,0 +1,4 @@
+### Arquivos de senhas ###
+# O POST /certificate do Config Server gera um passwords.txt com as senhas dos certificados.
+# Ignorar *.txt evita que ele seja commitado por acidente (as senhas ficam somente nos secrets).
+*.txt
